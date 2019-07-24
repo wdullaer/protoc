@@ -2,6 +2,7 @@ FROM golang:alpine
 
 # Install required additional tooling
 RUN apk --no-cache add git protobuf make protobuf-dev
+RUN apk --no-cache add openssh
 
 # Install grpc
 RUN go get -u google.golang.org/grpc

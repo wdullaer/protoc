@@ -14,3 +14,6 @@ RUN go get -u github.com/golang/protobuf/protoc-gen-go
 RUN go get -d github.com/envoyproxy/protoc-gen-validate &&\
     cd $GOPATH/src/github.com/envoyproxy/protoc-gen-validate &&\
     make build
+
+# Install proto-filter
+RUN go get -u github.com/wdullaer/proto-filter
